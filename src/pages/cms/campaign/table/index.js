@@ -12,10 +12,10 @@ import { stableSort, getComparator } from './helper';
 import { rows } from './data';
 import { EnhancedTableHead } from './EnhancedTableHead';
 import { EnhancedTableToolbar } from './EnhancedTableToolbar';
-import { EditOutlined } from '@mui/icons-material/index';
 import { Button } from '@mui/material/index';
 import { IconButton } from '@mui/material';
 import AddIcon from '@mui/icons-material/Add';
+import EditIcon from '@mui/icons-material/Edit';
 
 export default function TableCampaign() {
     const [order, setOrder] = React.useState('asc');
@@ -131,7 +131,7 @@ export default function TableCampaign() {
                                             <TableCell align="left">{row.protein}</TableCell>
                                             <TableCell align="left">
                                                 <IconButton variant="outlined" onClick={handleEditRow}>
-                                                    <EditOutlined />
+                                                    <EditIcon />
                                                 </IconButton>
                                             </TableCell>
                                         </TableRow>
