@@ -12,9 +12,9 @@ import { stableSort, getComparator } from './helper';
 import { rows } from './data';
 import { EnhancedTableHead } from './EnhancedTableHead';
 import { EnhancedTableToolbar } from './EnhancedTableToolbar';
-import { EditOutlined } from '../../../../../node_modules/@mui/icons-material/index';
+import { EditOutlined } from '@mui/icons-material/index';
 import { Button } from '@mui/material/index';
-import { IconButton } from '../../../../../node_modules/@mui/material/index';
+import { IconButton } from '@mui/material/index';
 import AddIcon from '@mui/icons-material/Add';
 
 export default function TableCampaign() {
