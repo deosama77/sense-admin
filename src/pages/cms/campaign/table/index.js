@@ -14,8 +14,7 @@ import { EnhancedTableHead } from './EnhancedTableHead';
 import { EnhancedTableToolbar } from './EnhancedTableToolbar';
 import { Button } from '@mui/material/index';
 import { IconButton } from '@mui/material';
-import AddIcon from '@mui/icons-material/Add';
-import EditIcon from '@mui/icons-material/Edit';
+import { EditOutlined, FolderAddOutlined } from '@ant-design/icons';
 
 export default function TableCampaign() {
     const [order, setOrder] = React.useState('asc');
@@ -81,7 +80,7 @@ export default function TableCampaign() {
         <Box sx={{ width: '100%' }}>
             <Paper sx={{ width: '100%', mb: 2 }}>
                 <EnhancedTableToolbar numSelected={selected.length} tableName={'Campaigns'} />
-                <Button variant="contained" endIcon={<AddIcon />}>
+                <Button variant="contained" endIcon={<FolderAddOutlined />}>
                     New Campaign
                 </Button>
                 <TableContainer>
@@ -131,7 +130,7 @@ export default function TableCampaign() {
                                             <TableCell align="left">{row.protein}</TableCell>
                                             <TableCell align="left">
                                                 <IconButton variant="outlined" onClick={handleEditRow}>
-                                                    <EditIcon />
+                                                    <EditOutlined />
                                                 </IconButton>
                                             </TableCell>
                                         </TableRow>
