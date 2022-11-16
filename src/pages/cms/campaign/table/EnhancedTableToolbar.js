@@ -30,7 +30,6 @@ export function EnhancedTableToolbar(props) {
                     {tableName}
                 </Typography>
             )}
-
             {numSelected > 0 ? (
                 <Tooltip title="Delete">
                     <IconButton>

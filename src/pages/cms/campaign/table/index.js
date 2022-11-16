@@ -15,6 +15,7 @@ import { EnhancedTableToolbar } from './EnhancedTableToolbar';
 import { EditOutlined } from '../../../../../node_modules/@mui/icons-material/index';
 import { Button } from '@mui/material/index';
 import { IconButton } from '../../../../../node_modules/@mui/material/index';
+import AddIcon from '@mui/icons-material/Add';
 
 export default function TableCampaign() {
     const [order, setOrder] = React.useState('asc');
@@ -80,6 +81,9 @@ export default function TableCampaign() {
         <Box sx={{ width: '100%' }}>
             <Paper sx={{ width: '100%', mb: 2 }}>
                 <EnhancedTableToolbar numSelected={selected.length} tableName={'Campaigns'} />
+                <Button variant="contained" endIcon={<AddIcon />}>
+                    New Campaign
+                </Button>
                 <TableContainer>
                     <Table sx={{ minWidth: 750 }} aria-labelledby="tableTitle" size={'small'}>
                         <EnhancedTableHead
